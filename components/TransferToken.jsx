@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 const TransferToken = () => {
-  return <div>TransferToken</div>;
-};
+	return <h1>T</h1>
+}
 
-export default TransferToken;
+export default TransferToken
