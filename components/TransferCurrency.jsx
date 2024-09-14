@@ -25,7 +25,7 @@ const TransferCurrency = ({
 				if (balance == undefined) {
 					console.log('Kindly past the token address')
 				} else {
-					setTokenDetails(balance)
+					setReceiver(balance)
 					console.log(balance)
 				}
 				setLoader(false)
@@ -57,8 +57,8 @@ const TransferCurrency = ({
 										type='text'
 										placeholder='_receiver'
 										onChange={e => (
-											setToken({
-												...tokenDetails,
+											setTransfer({
+												...transfer,
 												_receiver: e.target.value,
 											}),
 											setAddress(e.target.value)
@@ -70,7 +70,7 @@ const TransferCurrency = ({
 							<div className='col-lg-12'>
 								<input
 									type='text'
-									placeholder='_sendTo'
+									placeholder='_amount'
 									onChange={e =>
 										setTransfer({
 											...transfer,

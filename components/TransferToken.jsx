@@ -54,7 +54,7 @@ const transferToken = ({
 										placeholder='_tokenAddress'
 										onChange={e => (
 											setToken({
-												...tokenDetails,
+												...token,
 												_tokenAddress: e.target.value,
 											}),
 											setTransferToken(e.target.value)
@@ -69,7 +69,7 @@ const transferToken = ({
 									placeholder='_sendTo'
 									onChange={e =>
 										setToken({
-											...tokenDetails,
+											...token,
 											_sendTo: e.target.value,
 										})
 									}
@@ -81,7 +81,7 @@ const transferToken = ({
 									placeholder='_amount'
 									onChange={e =>
 										setToken({
-											...tokenDetails,
+											...token,
 											_amount: e.target.value,
 										})
 									}

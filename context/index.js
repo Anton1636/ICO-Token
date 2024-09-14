@@ -77,10 +77,10 @@ export const TOKEN_ICO_PROVIDER = ({ children }) => {
 
 				if (availableToken > 1) {
 					const price = ethers.utils.formatEther(
-						tokenDetails.tokenPrice.toString()
+						tokenDetails.tokenPrice.toString() * Number(amount)
 					)
 					const payAmount = ethers.utils.parseUnits(price.toString(), 'ether')
-					const transaction = await contract.buyToken(Number(account), {
+					const transaction = await contract.buyToken(Number(amount), {
 						value: payAmount.toString(),
 						gasLimit: ethers.utils.hexlify(8000000),
 					})
