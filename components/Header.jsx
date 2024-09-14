@@ -69,11 +69,6 @@ const Header = ({
 										</a>
 									</li>
 									<li>
-										<a className='scrollspy-btn' href='#roadmap'>
-											Roadmap
-										</a>
-									</li>
-									<li>
 										<a className='scrollspy-btn' href='#team'>
 											Team
 										</a>
