@@ -1,11 +1,12 @@
 import React from 'react'
 import toast from 'react-hot-toast'
 import { useForm } from '@formspree/react'
+require('dotenv').config()
 
 const Contact = () => {
 	const notifySuccess = msg => toast.success(msg, { duration: 2000 })
 	const notifyError = msg => toast.error(msg, { duration: 2000 })
-	const [state, handleSubmit] = useForm('yourKey')
+	const [state, handleSubmit] = useForm(process.env.FORMSPREE_API)
 
 	if (state.succeeded) {
 		notifyError('Message sent successfully')

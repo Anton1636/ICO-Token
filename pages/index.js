@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
 import {
 	About,
-	Brand,
 	Contact,
 	Donate,
 	Faq,
@@ -13,7 +12,6 @@ import {
 	Owner,
 	Popup,
 	Progress,
-	Roadmap,
 	SideBar,
 	Team,
 	Token,
@@ -158,7 +156,7 @@ const index = () => {
 					currency={currency}
 					ownerModel={ownerModel}
 				/>
-				<SideBar />
+				<SideBar setOwnerModel={setOwnerModel} ownerModel={ownerModel} />
 				<Hero
 					setBuyModel={setBuyModel}
 					account={account}

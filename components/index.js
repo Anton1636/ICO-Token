@@ -1,5 +1,4 @@
 import About from './About'
-import Brand from './Brand'
 import Contact from './Contact'
 import Donate from './Donate'
 import Faq from './Faq'
@@ -11,7 +10,6 @@ import Loader from './Loader'
 import Owner from './Owner'
 import Popup from './Popup'
 import Progress from './Progress'
-import Roadmap from './Roadmap'
 import SideBar from './SideBar'
 import Team from './Team'
 import Token from './Token'
@@ -23,7 +21,6 @@ import UpdatePrice from './UpdatePrice'
 
 export {
 	About,
-	Brand,
 	Contact,
 	Donate,
 	Faq,
@@ -35,7 +32,6 @@ export {
 	Owner,
 	Popup,
 	Progress,
-	Roadmap,
 	SideBar,
 	Team,
 	Token,
