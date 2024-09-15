@@ -6,7 +6,7 @@ require('dotenv').config()
 const Contact = () => {
 	const notifySuccess = msg => toast.success(msg, { duration: 2000 })
 	const notifyError = msg => toast.error(msg, { duration: 2000 })
-	const [state, handleSubmit] = useForm(process.env.FORMSPREE_API)
+	const [state, handleSubmit] = useForm('myzganvn')
 
 	if (state.succeeded) {
 		notifyError('Message sent successfully')

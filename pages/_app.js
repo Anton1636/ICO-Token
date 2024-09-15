@@ -20,9 +20,11 @@ import {
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 require('dotenv').config()
 
+const projectID = process.env.WALLETCONNECT_API
+
 const config = getDefaultConfig({
 	appName: 'Token ICO Platform',
-	projectId: process.env.WALLETCONNECT_API,
+	projectId: '95d70ee9728ece5b44c6d6d24c5e6857',
 	chains: [holesky],
 	ssr: true,
 })
